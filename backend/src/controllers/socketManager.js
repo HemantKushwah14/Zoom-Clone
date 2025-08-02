@@ -37,7 +37,7 @@ export const connectToSocket = (server) => {
                 io.to(connections[path][a]).emit("user-joined", socket.id, connections[path])
             }
 
-            if (messages[path] !== unx`defined) {
+            if (messages[path] !== undefined) {
                 for (let a = 0; a < messages[path].length; ++a) {
                     io.to(socket.id).emit("chat-message", messages[path][a]['data'],
                         messages[path][a]['sender'], messages[path][a]['socket-id-sender'])
