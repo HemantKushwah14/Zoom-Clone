@@ -20,7 +20,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://your-frontend-name.onrender.com"
+      "https://connecto-x39f.onrender.com"
     ],
     credentials: true,
   })
